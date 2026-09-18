@@ -267,6 +267,35 @@ h2 {
 }
 
 /* =========================================
+   REPRODUCTOR DE MÚSICA
+========================================= */
+
+.music-section {
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--gold);
+
+    border-radius: 6px;
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+}
+
+.music-section p {
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+}
+
+.music-section audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* =========================================
    TARJETAS Y PROYECTOS
 ========================================= */
 
