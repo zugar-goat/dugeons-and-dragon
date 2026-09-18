@@ -61,7 +61,35 @@ h2 {
     font-size: 1.6rem;
 }
 
-/* --- TABLA NATIVA DE RAZAS D&D --- */
+/* --- ESTILOS DE LA LISTA ORDENADA (OL) --- */
+.dnd-steps {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--gold);
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dnd-steps li {
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+}
+
+.dnd-steps li::marker {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.dnd-steps li strong {
+    color: var(--gold);
+}
+
+.dnd-steps li:last-child {
+    margin-bottom: 0;
+}
+
+/* --- TABLAS D&D --- */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -102,14 +130,14 @@ h2 {
     background-color: rgba(212, 175, 55, 0.05);
 }
 
-.race-name {
+.table-name {
     color: var(--gold);
     font-weight: bold;
     font-size: 1.05rem;
     white-space: nowrap;
 }
 
-/* --- PROYECTOS Y TARJETAS --- */
+/* --- TARJETAS Y PROYECTOS --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
