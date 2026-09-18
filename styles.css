@@ -1,6 +1,6 @@
 :root {
     --bg-dark: #0f0d0e;
-    --card-bg: #1a1618;
+    --card-bg: rgba(26, 22, 24, 0.92); /* Fondo semi-transparente para lecturas cómodas */
     --border-color: #3b2d27;
     --gold: #d4af37;
     --red-dnd: #9b2226;
@@ -17,6 +17,12 @@
 body {
     font-family: 'Georgia', 'Times New Roman', serif;
     background-color: var(--bg-dark);
+    /* Imagen de fondo con filtro oscuro para no tapar la lectura */
+    background-image: linear-gradient(rgba(15, 13, 14, 0.75), rgba(15, 13, 14, 0.75)), url('background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     color: var(--text-light);
     line-height: 1.6;
     padding: 2rem 1rem;
@@ -25,6 +31,11 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    background-color: rgba(15, 13, 14, 0.85);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 header {
@@ -127,7 +138,7 @@ h2 {
 }
 
 .dnd-table tbody tr:hover {
-    background-color: rgba(212, 175, 55, 0.05);
+    background-color: rgba(212, 175, 55, 0.1);
 }
 
 .table-name {
