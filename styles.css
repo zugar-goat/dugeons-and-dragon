@@ -202,6 +202,41 @@ h2 {
 }
 
 /* =========================================
+   SECCIÓN DE VIDEO
+========================================= */
+
+.video-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.video-section p {
+    color: var(--text-dim);
+    margin-bottom: 1.2rem;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
    TABLAS D&D
 ========================================= */
 
